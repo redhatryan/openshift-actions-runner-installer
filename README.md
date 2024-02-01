@@ -1,19 +1,10 @@
 # OpenShift Actions Runner Installer
 
-[![Install into repository](https://github.com/redhatryan/openshift-actions-runner-installer/workflows/Install%20into%20repository/badge.svg)](https://github.com/redhatryan/openshift-actions-runner-installer/actions)
-[![Install into org](https://github.com/redhatryan/openshift-actions-runner-installer/workflows/Install%20into%20redhat-actions/badge.svg)](https://github.com/redhatryan/openshift-actions-runner-installer/actions)
-[![CI checks](https://github.com/redhatryan/openshift-actions-runner-installer/workflows/CI%20Checks/badge.svg)](https://github.com/redhatryan/openshift-actions-runner-installer/actions)
-[![Link checker](https://github.com/redhatryan/openshift-actions-runner-installer/workflows/Link%20checker/badge.svg)](https://github.com/redhatryan/openshift-actions-runner-installer/actions)
-
-[![awesome-runners](https://img.shields.io/badge/listed%20on-awesome--runners-blue.svg)](https://github.com/jonico/awesome-runners)
-[![tag badge](https://img.shields.io/github/v/tag/redhatryan/openshift-actions-runner-installer)](https://github.com/redhatryan/openshift-actions-runner-installer/tags)
-[![license badge](https://img.shields.io/github/license/redhatryan/kn-service-deploy)](./LICENSE)
-
 The OpenShift Self-Hosted Actions Runner Installer is a GitHub Action to automatically install self-hosted Actions runner containers into a Kubernetes cluster.
 
 The action uses the [**OpenShift Actions Runner Chart**](https://github.com/redhatryan/openshift-actions-runner-chart/) to install runners.
 
-By default, the chart installs the [**OpenShift Actions Runner**](https://github.com/redhatryan/openshift-actions-runners). The image to use is configurable (see [Inputs](#inputs)).
+By default, the chart installs the [**OpenShift Actions Runner**](https://github.com/redhatryan/openshift-actions-runner). The image to use is configurable (see [Inputs](#inputs)).
 
 This action uses these two projects to make the self-hosted runner installation on Kubernetes as easy as possible.
 

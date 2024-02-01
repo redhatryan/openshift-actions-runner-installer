@@ -15,6 +15,9 @@
 		{
 			"name": "openshift-tools-installer",
 			"path": "../openshift-tools-installer"
+		},
+		{
+			"path": "../oc-login"
 		}
 	],
 	"settings": {}

@@ -1,13 +1,13 @@
 # OpenShift Actions Runner Installer
 
-[![Install into repository](https://github.com/redhat-actions/openshift-actions-runner-installer/workflows/Install%20into%20repository/badge.svg)](https://github.com/redhat-actions/openshift-actions-runner-installer/actions)
-[![Install into org](https://github.com/redhat-actions/openshift-actions-runner-installer/workflows/Install%20into%20redhat-actions/badge.svg)](https://github.com/redhat-actions/openshift-actions-runner-installer/actions)
-[![CI checks](https://github.com/redhat-actions/openshift-actions-runner-installer/workflows/CI%20Checks/badge.svg)](https://github.com/redhat-actions/openshift-actions-runner-installer/actions)
-[![Link checker](https://github.com/redhat-actions/openshift-actions-runner-installer/workflows/Link%20checker/badge.svg)](https://github.com/redhat-actions/openshift-actions-runner-installer/actions)
+[![Install into repository](https://github.com/redhatryan/openshift-actions-runner-installer/workflows/Install%20into%20repository/badge.svg)](https://github.com/redhatryan/openshift-actions-runner-installer/actions)
+[![Install into org](https://github.com/redhatryan/openshift-actions-runner-installer/workflows/Install%20into%20redhat-actions/badge.svg)](https://github.com/redhatryan/openshift-actions-runner-installer/actions)
+[![CI checks](https://github.com/redhatryan/openshift-actions-runner-installer/workflows/CI%20Checks/badge.svg)](https://github.com/redhatryan/openshift-actions-runner-installer/actions)
+[![Link checker](https://github.com/redhatryan/openshift-actions-runner-installer/workflows/Link%20checker/badge.svg)](https://github.com/redhatryan/openshift-actions-runner-installer/actions)
 
 [![awesome-runners](https://img.shields.io/badge/listed%20on-awesome--runners-blue.svg)](https://github.com/jonico/awesome-runners)
-[![tag badge](https://img.shields.io/github/v/tag/redhat-actions/openshift-actions-runner-installer)](https://github.com/redhat-actions/openshift-actions-runner-installer/tags)
-[![license badge](https://img.shields.io/github/license/redhat-actions/kn-service-deploy)](./LICENSE)
+[![tag badge](https://img.shields.io/github/v/tag/redhatryan/openshift-actions-runner-installer)](https://github.com/redhatryan/openshift-actions-runner-installer/tags)
+[![license badge](https://img.shields.io/github/license/redhatryan/kn-service-deploy)](./LICENSE)
 
 The OpenShift Self-Hosted Actions Runner Installer is a GitHub Action to automatically install self-hosted Actions runner containers into a Kubernetes cluster.
 
@@ -73,7 +73,7 @@ jobs:
 ## Inputs
 The only required input is the `github_pat`, which is a [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token), with the appropriate permisions.
 
-The token must have the `repo` permission scope. For organization runners, the token must also have the `admin:org` scope. Refer to the Runner [README](https://github.com/redhat-actions/openshift-actions-runner#pat-guidelines).
+The token must have the `repo` permission scope. For organization runners, the token must also have the `admin:org` scope. Refer to the Runner [README](https://github.com/redhatryan/openshift-actions-runner#pat-guidelines).
 
 Note that the default workflow token `secrets.GITHUB_TOKEN` does **not** have the permissions required to check for and install self-hosted runners. Refer to [Permissions for the GITHUB_TOKEN](https://docs.github.com/en/actions/reference/authentication-in-a-workflow#permissions-for-the-github_token).
 
@@ -88,8 +88,8 @@ Note that the default workflow token `secrets.GITHUB_TOKEN` does **not** have th
 | namespace | Optional Kubernetes namespace to pass to all Helm and Kube client comands.  | None |
 | helm_release_name | The Helm release name to use. | Runner location (repo or org) |
 | helm_uninstall_existing | Uninstall any release that matches the `helm_release_name` and `namespace` before running `helm install`. If this is false, and the release exists, the action will fail when the `helm install` fails. | `true` |
-| helm_chart_version | Version of our [Helm Chart](https://github.com/redhat-actions/openshift-actions-runner-chart) to install. | Latest release
-| helm_extra_args | Arbitrary arguments to append to the `helm` command. Refer to the [Chart README](https://github.com/redhat-actions/openshift-actions-runner-chart). <br>Separate items by newline. Do not quote the arguments, since `@actions/exec` manages quoting. | None |
+| helm_chart_version | Version of our [Helm Chart](https://github.com/redhatryan/openshift-actions-runner-chart) to install. | Latest release
+| helm_extra_args | Arbitrary arguments to append to the `helm` command. Refer to the [Chart README](https://github.com/redhatryan/openshift-actions-runner-chart). <br>Separate items by newline. Do not quote the arguments, since `@actions/exec` manages quoting. | None |
 
 ## Outputs
 | Output Name | Description |
@@ -108,7 +108,7 @@ Refer to the [tear down example](./.github/workflows/tear_down_runners.yml) and 
 <a id="troubleshooting"></a>
 ## Troubleshooting
 
-See the Troubleshooting sections of [the chart README](https://github.com/redhat-actions/openshift-actions-runner-chart#Troubleshooting), and [the runner README](https://github.com/redhat-actions/openshift-actions-runner#Troubleshooting).
+See the Troubleshooting sections of [the chart README](https://github.com/redhatryan/openshift-actions-runner-chart#Troubleshooting), and [the runner README](https://github.com/redhatryan/openshift-actions-runner#Troubleshooting).
 
 The most common errors are due to a missing or misconfigured GitHub PAT. Make sure that:
 - The secret was created correctly.

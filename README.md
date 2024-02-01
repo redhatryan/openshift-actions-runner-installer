@@ -11,9 +11,9 @@
 
 The OpenShift Self-Hosted Actions Runner Installer is a GitHub Action to automatically install self-hosted Actions runner containers into a Kubernetes cluster.
 
-The action uses the [**OpenShift Actions Runner Chart**](https://github.com/redhat-actions/openshift-actions-runner-chart/) to install runners.
+The action uses the [**OpenShift Actions Runner Chart**](https://github.com/redhatryan/openshift-actions-runner-chart/) to install runners.
 
-By default, the chart installs the [**OpenShift Actions Runner**](https://github.com/redhat-actions/openshift-actions-runner). The image to use is configurable (see [Inputs](#inputs)).
+By default, the chart installs the [**OpenShift Actions Runner**](https://github.com/redhatryan/openshift-actions-runner). The image to use is configurable (see [Inputs](#inputs)).
 
 This action uses these two projects to make the self-hosted runner installation on Kubernetes as easy as possible.
 

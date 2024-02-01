@@ -1,12 +1,19 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"name": "openshift-actions-runners",
+			"path": "../openshift-actions-runners"
 		},
 		{
+			"name": "openshift-actions-runner-chart",
 			"path": "../openshift-actions-runner-chart"
 		},
 		{
+			"name": "openshift-actions-runner-installer",
+			"path": "."
+		},
+		{
+			"name": "openshift-tools-installer",
 			"path": "../openshift-tools-installer"
 		}
 	],

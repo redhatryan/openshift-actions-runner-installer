@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../openshift-actions-runner-chart"
+		},
+		{
+			"path": "../openshift-tools-installer"
+		}
+	],
+	"settings": {}
+}
